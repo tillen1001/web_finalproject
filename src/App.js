@@ -9,7 +9,7 @@ import chenApp from './chenApp'
 import miaoApp from './miaoApp';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-275974064');
+ReactGA.initialize('G-Z2KHY3JC8L');
 
 function App(){
   
