@@ -9,15 +9,15 @@ import chenApp from './chenApp'
 import miaoApp from './miaoApp';
 import ReactGA from 'react-ga';
 
-//ReactGA.initialize('G-6DBMSD17YL');
+ReactGA.initialize('UA-275974064');
 
 function App(){
-  /*
+  
   const location=useLocation();
   useEffect(() => {
     ReactGA.pageview(location.pathname+location.search)
   }, [location]);
-  */
+  
   return (
     <div className="container">
       {/* Put Navbar Here */}
