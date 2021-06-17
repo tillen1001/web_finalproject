@@ -1,3 +1,6 @@
-.video{
-    background-color: rgb(199, 139, 255);
+@media(min-width:600px){
+    .video{
+        width: 50%;
+        background-color: rgb(199, 139, 255);
+    }
 }

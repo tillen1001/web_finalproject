@@ -10,6 +10,9 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { useState } from "react";
+
+//const [todoInput, setTodoInput] = useState("");
 
 function Copyright() {
   return (
@@ -44,6 +47,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function SignIn() {
   const classes = useStyles();
 
@@ -65,6 +70,11 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
+            //value={todoInput}
+            //onChange={(e) => {
+            //  setTodoInput(e.target.value);
+            //  console.log(`this is the todo input ${e.target.value}`);
+            //}}
           />
           <TextField
             variant="outlined"

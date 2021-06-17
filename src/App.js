@@ -9,13 +9,14 @@ import chenApp from './chenApp'
 import miaoApp from './miaoApp';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('G-Z2KHY3JC8L');
+ReactGA.initialize('UA-199715801-1');
 
 function App(){
   
   const location=useLocation();
   useEffect(() => {
     ReactGA.pageview(location.pathname+location.search)
+    console.log(location.pathname + location.search)
   }, [location]);
   
   return (
