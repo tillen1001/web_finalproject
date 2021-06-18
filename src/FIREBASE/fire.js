@@ -1,18 +1,20 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
     apiKey: "AIzaSyCwbFdk0uYhVPxPjucUZhRf4r0FE5iOmEE",
     authDomain: "web-finalproject-a117e.firebaseapp.com",
     databaseURL: "https://web-finalproject-a117e-default-rtdb.firebaseio.com",
     projectId: "web-finalproject-a117e",
     storageBucket: "web-finalproject-a117e.appspot.com",
     messagingSenderId: "1091128688404",
-    appId: "1:1091128688404:web:e44372c09237c701d8cc01",
-    measurementId: "G-HHEVH9TFFS"
+    appId: "1:1091128688404:web:8171585a359b7aded8cc01",
+    measurementId: "G-Z2F0VH0Y7H"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+  const fire = firebase.initializeApp(firebaseConfig);
+  //firebase.analytics();
 
-  const db = firebase.firestore();
-
-  export { db };
+  export default fire;

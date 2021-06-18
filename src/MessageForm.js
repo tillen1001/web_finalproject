@@ -1,4 +1,7 @@
 import React from 'react';
+//import { useState } from "react";
+
+//const [todoInput, setTodoInput] = useState("");
 
 class MessageForm extends React.Component{
     tijiao(event){
@@ -24,6 +27,11 @@ class MessageForm extends React.Component{
                     onKeyUp={this.add.bind(this)} 
                     id="exampleInputName2" 
                     placeholder="新增新留言"
+                    //value={todoInput}
+                    //onChange={(e) => {
+                    //  setTodoInput(e.target.value);
+                    //  console.log(`this is the todo input ${e.target.value}`);
+                    //}}
                     />
                 </div>
                 <div className="col-sm-2">
