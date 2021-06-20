@@ -2,7 +2,6 @@ import React , { useState, useEffect}from "react"
 import fire from './FIREBASE/fire'
 import Lo from "./lo";
 import './login.css';
-import Video from './video'
 
 const Login=()=>{ 
       const [user, setUser]=useState("");
@@ -32,15 +31,20 @@ const handleLogin=()=>{
         case "auth/invalid-email":
         case "auth/user-disabled":
         case "auth/user-not-found":
-            setEmailError(err.message);
-        break;
+          setEmailError(err.message);
+          break;
         case "auth/wrong-password":
-            setPasswordError(err.message);
-            break;
+          setPasswordError(err.message);
+          break;
       }
     });
-    alert('登入成功！')
   };
+  /*
+  if(!err.code){
+    alert("登入成功");
+    window.location.href = "/";
+  }
+  */
 
   const handleSignup=()=>{
     clearErrors();
@@ -75,25 +79,25 @@ const handleLogin=()=>{
   useEffect(()=>{
     authListener();
   }, []);
-
+  
   return(
     <div className="Lo">
-      <Lo
-      email={email}
-      setEmail={setEmail}
-      password={password}
-      setPassword={setPassword}
-      handleLogin={handleLogin}
-      handleSignup={handleSignup}
-      hasAccount={hasAccount}
-      setHasAccount={setHasAccount}
-      emailError={emailError}
-      passwordError={passwordError}
+        <Lo
+        email={email}
+        setEmail={setEmail}
+        password={password}
+        setPassword={setPassword}
+        handleLogin={handleLogin}
+        handleSignup={handleSignup}
+        hasAccount={hasAccount}
+        setHasAccount={setHasAccount}
+        emailError={emailError}
+        passwordError={passwordError}
       />
+      
     </div>
   );
 }
 
 
 export default Login;
-

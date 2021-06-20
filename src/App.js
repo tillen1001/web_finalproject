@@ -3,12 +3,11 @@ import { Route, useLocation } from 'react-router-dom';
 import { Web } from './Pages';
 import { Navbar } from './components';
 import Login from './login';
-import MessageApp from './MessageApp';
 import video from './video';
 import chenApp from './chenApp';
 import miaoApp from './miaoApp';
 import ReactGA from 'react-ga';
-import fire from './FIREBASE/fire';
+import Message from './message';
 
 
 ReactGA.initialize('UA-199715801-1');
@@ -24,12 +23,12 @@ function App(){
     <div className="container">
       {/* Put Navbar Here */}
       <Navbar />
-      <Route path="/login" exact component={Login}/>
-      <Route path="/" exact component={video} />
-      <Route path="/MessageBoard" exact component={MessageApp} />
+      <Route path="/login" exact component={ Login }/>
+      <Route path="/" exact component={ video } />
+      <Route path="/MessageBoard" exact component={ Message }/>
       <Route path="/Web" component={ Web } />
-      <Route path="/Web/chenWeb" component={chenApp}></Route>
-      <Route path="/Web/miaoWeb" component={miaoApp}></Route>
+      <Route path="/Web/chenWeb" component={ chenApp }/>
+      <Route path="/Web/miaoWeb" component={ miaoApp }/>
     </div>
   );
 }

@@ -1,6 +1,13 @@
-@media(min-width:600px){
-    .video{
-        width: 50%;
-        background-color: rgb(199, 139, 255);
+@media screen and (min-width:1000px){
+    .player{
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:500px){
+    .player{
+        width: 500px;
+        height: auto;
     }
 }
