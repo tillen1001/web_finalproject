@@ -23,7 +23,7 @@ class ThreadDisplay extends Component {
     });
   }
 
-  addPost(postBody) {
+  addPost(postBody,email) {
     const postToSave = {postBody};
     this.databaseRef.push().set(postToSave);
   }

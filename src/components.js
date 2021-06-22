@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link className="nav-link" to="/login">
-              Home
+              Login
               <script async src="https://www.googletagmanager.com/gtag/js?
               id=GA_MEASUREMENT_ID"></script>
             </Link>
