@@ -16,9 +16,11 @@ ReactDOM.render(
   <Switch>
     <App />
   </Switch>
-    
+  
   </BrowserRouter>,
+
   document.getElementById('root')
+  
 );  
 
 reportWebVitals();

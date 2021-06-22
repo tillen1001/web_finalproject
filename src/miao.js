@@ -37,7 +37,7 @@ class Usergithub extends React.Component {
             <div>                          
                 <img src={this.state.avatarUrl} />           
                 <h3>NAME: {this.state.username}</h3>
-                <h5>ID: {this.state.userlogin}</h5>
+                <h3>ID: {this.state.userlogin}</h3>
                 <h3>SCHOOL: {this.state.userSchool}</h3>
                 <h3>LOCATION: {this.state.userlocate}</h3> 
                 <a href={this.state.userblog}><h5>My Web Page</h5> </a>

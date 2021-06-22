@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ThreadDisplay from './ThreadDisplay/components/ThreadDisplay';
 import 'firebase/database';
 import './message.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Fire from './FIREBASE/fire';
 
 class Message extends Component {

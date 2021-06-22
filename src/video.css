@@ -1,13 +1,6 @@
-@media screen and (min-width:1000px){
+@media screen {
     .player{
-        width: 1000px;
-        height: 500px;
-    }
-}
-
-@media screen and (min-width:500px){
-    .player{
-        width: 500px;
-        height: auto;
+        width: 60%;
+        height: 40%;
     }
 }

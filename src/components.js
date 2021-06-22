@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo.svg';
+import './components.css'
 
 const Navbar = () => {
   return (
@@ -35,6 +36,12 @@ const Navbar = () => {
               MessageBoard
             </Link>
           </li>
+          
+          <li className="nav-item">
+            <Link className="nav-link" to="/Search">
+              Search
+            </Link>
+          </li>
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle"
@@ -45,7 +52,7 @@ const Navbar = () => {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Web
+              About
             </Link>
             <div
               className="dropdown-menu"

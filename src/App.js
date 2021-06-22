@@ -8,6 +8,8 @@ import chenApp from './chenApp';
 import miaoApp from './miaoApp';
 import ReactGA from 'react-ga';
 import Message from './message';
+import Search from './search';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 
 ReactGA.initialize('UA-199715801-1');
@@ -23,8 +25,11 @@ function App(){
     <div className="container">
       {/* Put Navbar Here */}
       <Navbar />
-      <Route path="/login" exact component={ Login }/>
       <Route path="/" exact component={ video } />
+      <Route path="/login" exact component={ Login }/>
+      <MuiThemeProvider>
+        <Route path="/search" exact component={ Search }/>
+      </MuiThemeProvider>
       <Route path="/MessageBoard" exact component={ Message }/>
       <Route path="/Web" component={ Web } />
       <Route path="/Web/chenWeb" component={ chenApp }/>

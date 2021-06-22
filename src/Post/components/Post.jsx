@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Post.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Post = (props) => (
   <div className="panel panel-default post-body">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/PostEditor.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class PostEditor extends Component {
   constructor(props) {

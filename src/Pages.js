@@ -14,7 +14,6 @@ const MessageBoard = () => {
 const Web = () => {
   return (
     <div>
-      <h1>Our Webs</h1>
       <Switch>
         {/* The component will show here if the current URL matches the path */}
         <Route path="/Web/B0829031" component={B0829031} />
