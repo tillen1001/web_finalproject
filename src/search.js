@@ -36,10 +36,12 @@ class Search extends Component{
             style=
             {{backgroundColor:'#D1DFE8',
             color:'black',
-            marginLeft:500,
+            textAlign: 'center',
+            margin: 'center',
+            // marginLeft:500,
             marginTop:50,
-            paddingTop:20,
-            paddingLeft:70,
+            // paddingTop:20,
+            // paddingLeft:70,
             fontSize:30,
             borderTopStyle:"hidden",
             borderRightStyle:"hidden",
@@ -52,9 +54,9 @@ class Search extends Component{
         name="searchText"
         value={this.state.searchText}
         onChange={this.onTextChange}
-             />
-<br />
-{this.state.images.length>0?(<ImageResults images={this.state.images}/>):null}
+            />
+        <br />
+        {this.state.images.length>0?(<ImageResults images={this.state.images}/>):null}
             </div>
 
         )

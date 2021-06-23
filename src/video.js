@@ -5,7 +5,7 @@ class video extends Component {
   render() {
     return (
       <div className="player">
-        <iframe width="1295px" 
+        <iframe width="1295px auto" 
         height="740px" 
         src="https://www.youtube.com/embed/v7bnOxV4jAc" 
         title="YouTube video player" 

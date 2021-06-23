@@ -1,9 +1,13 @@
 .post-body {
+    font-family: Microsoft YaHei;
+    color: #3D708F;
     margin: 1em 20%;
   }
   
   @media(max-width: 900px) {
     .post-body {
+      font-family: Microsoft YaHei;
       margin: 1em;
+      color: #3D708F;
     }
   }

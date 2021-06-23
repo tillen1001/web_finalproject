@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 class Usergithub extends React.Component {     
     constructor(props) {  //建構子      
-        super(props);         
+        super(props);      
         this.state = {           
             username: '',           
             userlogin: '',           

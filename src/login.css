@@ -1,7 +1,9 @@
 *{
   background-Color:#D1DFE8;
-}
+} 
 .title{
+  color: #3D708F;
+  font-family: Microsoft YaHei;
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -17,16 +19,19 @@
   margin-bottom: 30px;
 }
 .name{
+  font-family: Microsoft YaHei;
   display: flex;
   justify-content: center; 
   align-items: center; 
 }
 .email{
+  font-family: Microsoft YaHei;
   display: flex;
   justify-content: center; 
   align-items: center; 
 }
 .button{
+  font-family: Microsoft YaHei;
   display: flex;
   justify-content: center; 
   align-items: center;

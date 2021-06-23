@@ -4,6 +4,13 @@ import Fire from './FIREBASE/fire'
 import './login.css'
 
 export const Login=()=>{
+  <div
+      style={{
+        backgroundColor: '#D1DFE8',
+        width: '100px',
+        height: '100px',
+      }}
+    />
   const [currentUser,setCurrentUser]=useState()
   const provider=new firebase.auth.GoogleAuthProvider()
 
