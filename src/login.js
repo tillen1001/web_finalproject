@@ -20,7 +20,7 @@ export const Login=()=>{
   // const logout=()=>{
   //   firebase.auth().signOut(provider)
   // }
-
+  
   return(
     <>
     <div>
@@ -43,9 +43,7 @@ export const Login=()=>{
         <div className="login">
           <button onClick={authWithGoogle}>Login</button>
         </div>
-        {/* <div className="logout">
-          <button Onclick={logout}>Logout</button>
-        </div> */}
+        
       </div>
       
     </div>
